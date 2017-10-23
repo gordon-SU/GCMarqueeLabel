@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8A01C2243F858336158DB5E /* Pods_GCMarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5081552A99D3F436C80AE7 /* Pods_GCMarqueeLabel.framework */; };
+		F8F17C181F9DA18A00934A96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F17C171F9DA18A00934A96 /* AppDelegate.m */; };
+		F8F17C1B1F9DA18A00934A96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F17C1A1F9DA18A00934A96 /* ViewController.m */; };
+		F8F17C1E1F9DA18A00934A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F17C1C1F9DA18A00934A96 /* Main.storyboard */; };
+		F8F17C201F9DA18A00934A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F17C1F1F9DA18A00934A96 /* Assets.xcassets */; };
+		F8F17C231F9DA18A00934A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F17C211F9DA18A00934A96 /* LaunchScreen.storyboard */; };
+		F8F17C261F9DA18A00934A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F17C251F9DA18A00934A96 /* main.m */; };
+		F8F17C2E1F9DA22B00934A96 /* GCMarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F17C2D1F9DA22B00934A96 /* GCMarqueeLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2835473806994D6CF055F598 /* Pods-GCMarqueeLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMarqueeLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCMarqueeLabel/Pods-GCMarqueeLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5081552A99D3F436C80AE7 /* Pods_GCMarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCMarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA59C39A127365119FA7D442 /* Pods-GCMarqueeLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMarqueeLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCMarqueeLabel/Pods-GCMarqueeLabel.release.xcconfig"; sourceTree = "<group>"; };
+		F8F17C131F9DA18A00934A96 /* GCMarqueeLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCMarqueeLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F17C161F9DA18A00934A96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8F17C171F9DA18A00934A96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8F17C191F9DA18A00934A96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8F17C1A1F9DA18A00934A96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8F17C1D1F9DA18A00934A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8F17C1F1F9DA18A00934A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8F17C221F9DA18A00934A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8F17C241F9DA18A00934A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F17C251F9DA18A00934A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8F17C2C1F9DA22B00934A96 /* GCMarqueeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCMarqueeLabel.h; sourceTree = "<group>"; };
+		F8F17C2D1F9DA22B00934A96 /* GCMarqueeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMarqueeLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8F17C101F9DA18A00934A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A01C2243F858336158DB5E /* Pods_GCMarqueeLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2812607CF5892BD39F3E05E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C5081552A99D3F436C80AE7 /* Pods_GCMarqueeLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		419D06B0535CB657FFDEF05D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2835473806994D6CF055F598 /* Pods-GCMarqueeLabel.debug.xcconfig */,
+				CA59C39A127365119FA7D442 /* Pods-GCMarqueeLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8F17C0A1F9DA18A00934A96 = {
+			isa = PBXGroup;
+			children = (
+				F8F17C151F9DA18A00934A96 /* GCMarqueeLabel */,
+				F8F17C141F9DA18A00934A96 /* Products */,
+				419D06B0535CB657FFDEF05D /* Pods */,
+				2812607CF5892BD39F3E05E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8F17C141F9DA18A00934A96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8F17C131F9DA18A00934A96 /* GCMarqueeLabel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8F17C151F9DA18A00934A96 /* GCMarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F8F17C161F9DA18A00934A96 /* AppDelegate.h */,
+				F8F17C171F9DA18A00934A96 /* AppDelegate.m */,
+				F8F17C191F9DA18A00934A96 /* ViewController.h */,
+				F8F17C1A1F9DA18A00934A96 /* ViewController.m */,
+				F8F17C1C1F9DA18A00934A96 /* Main.storyboard */,
+				F8F17C1F1F9DA18A00934A96 /* Assets.xcassets */,
+				F8F17C211F9DA18A00934A96 /* LaunchScreen.storyboard */,
+				F8F17C241F9DA18A00934A96 /* Info.plist */,
+				F8F17C251F9DA18A00934A96 /* main.m */,
+				F8F17C2C1F9DA22B00934A96 /* GCMarqueeLabel.h */,
+				F8F17C2D1F9DA22B00934A96 /* GCMarqueeLabel.m */,
+			);
+			path = GCMarqueeLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8F17C121F9DA18A00934A96 /* GCMarqueeLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F17C291F9DA18A00934A96 /* Build configuration list for PBXNativeTarget "GCMarqueeLabel" */;
+			buildPhases = (
+				1A3F1E510143B6D10C3F8173 /* [CP] Check Pods Manifest.lock */,
+				F8F17C0F1F9DA18A00934A96 /* Sources */,
+				F8F17C101F9DA18A00934A96 /* Frameworks */,
+				F8F17C111F9DA18A00934A96 /* Resources */,
+				0DAC2A92E927D57AD7E4DE53 /* [CP] Embed Pods Frameworks */,
+				185129E8798EB27E8205821C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCMarqueeLabel;
+			productName = "GCMarqueeLabel.git GCMarqueeLabel";
+			productReference = F8F17C131F9DA18A00934A96 /* GCMarqueeLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8F17C0B1F9DA18A00934A96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = gordon;
+				TargetAttributes = {
+					F8F17C121F9DA18A00934A96 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8F17C0E1F9DA18A00934A96 /* Build configuration list for PBXProject "GCMarqueeLabel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8F17C0A1F9DA18A00934A96;
+			productRefGroup = F8F17C141F9DA18A00934A96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8F17C121F9DA18A00934A96 /* GCMarqueeLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8F17C111F9DA18A00934A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F17C231F9DA18A00934A96 /* LaunchScreen.storyboard in Resources */,
+				F8F17C201F9DA18A00934A96 /* Assets.xcassets in Resources */,
+				F8F17C1E1F9DA18A00934A96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DAC2A92E927D57AD7E4DE53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GCMarqueeLabel/Pods-GCMarqueeLabel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCMarqueeLabel/Pods-GCMarqueeLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		185129E8798EB27E8205821C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCMarqueeLabel/Pods-GCMarqueeLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A3F1E510143B6D10C3F8173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCMarqueeLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8F17C0F1F9DA18A00934A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F17C1B1F9DA18A00934A96 /* ViewController.m in Sources */,
+				F8F17C2E1F9DA22B00934A96 /* GCMarqueeLabel.m in Sources */,
+				F8F17C261F9DA18A00934A96 /* main.m in Sources */,
+				F8F17C181F9DA18A00934A96 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8F17C1C1F9DA18A00934A96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F17C1D1F9DA18A00934A96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F17C211F9DA18A00934A96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F17C221F9DA18A00934A96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8F17C271F9DA18A00934A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8F17C281F9DA18A00934A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8F17C2A1F9DA18A00934A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2835473806994D6CF055F598 /* Pods-GCMarqueeLabel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43X5C5Z9YX;
+				INFOPLIST_FILE = GCMarqueeLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gordon.GCMarqueeLabel-git-GCMarqueeLabel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8F17C2B1F9DA18A00934A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA59C39A127365119FA7D442 /* Pods-GCMarqueeLabel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43X5C5Z9YX;
+				INFOPLIST_FILE = GCMarqueeLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gordon.GCMarqueeLabel-git-GCMarqueeLabel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8F17C0E1F9DA18A00934A96 /* Build configuration list for PBXProject "GCMarqueeLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F17C271F9DA18A00934A96 /* Debug */,
+				F8F17C281F9DA18A00934A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8F17C291F9DA18A00934A96 /* Build configuration list for PBXNativeTarget "GCMarqueeLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F17C2A1F9DA18A00934A96 /* Debug */,
+				F8F17C2B1F9DA18A00934A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8F17C0B1F9DA18A00934A96 /* Project object */;
+}

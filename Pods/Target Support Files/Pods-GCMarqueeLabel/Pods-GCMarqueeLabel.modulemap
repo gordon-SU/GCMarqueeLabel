@@ -1,0 +1,6 @@
+framework module Pods_GCMarqueeLabel {
+  umbrella header "Pods-GCMarqueeLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
