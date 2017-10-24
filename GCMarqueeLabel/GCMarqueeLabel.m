@@ -58,25 +58,32 @@
     if (!_isAnimation) {
         _isAnimation = YES;
         CABasicAnimation* caBasePosition = [CABasicAnimation animation];
-        caBasePosition.keyPath = @"transform.translation.x";
+        CGFloat toValue = 0;
+        if (_direction == GCMarqueeDirectionLeftToRight || _direction == GCMarqueeDirectionRightToLeft) {
+            caBasePosition.keyPath = @"transform.translation.x";
+            if (_direction == GCMarqueeDirectionRightToLeft) {
+                toValue = - (self.titleLable.frame.size.width + self.margin);
+            }else{
+                toValue = self.titleLable.frame.size.width + self.margin;
+            }
+        }else if (_direction == GCMarqueeDirectionBottomToTop || _direction == GCMarqueeDirectionTopToBottom){
+            caBasePosition.keyPath = @"transform.translation.y";
+            if (_direction == GCMarqueeDirectionBottomToTop) {
+                toValue = - (self.subTitleLabel.frame.size.height);
+            }else{
+                toValue = self.subTitleLabel.frame.size.height;
+            }
+        }
         CGFloat fromValue = 0;
         caBasePosition.fromValue = [NSNumber numberWithFloat:fromValue];
-        CGFloat toValue = - (self.subTitleLabel.frame.origin.x);
+
         caBasePosition.toValue = [NSNumber numberWithFloat:toValue];
         caBasePosition.repeatCount = CGFLOAT_MAX;
         CGFloat durantion = (fabs(fromValue) + fabs(toValue)) * 0.1;
         caBasePosition.duration = durantion;
+        [self.titleLable.layer addAnimation:caBasePosition forKey:@"paoma"];
+        [self.subTitleLabel.layer addAnimation:caBasePosition forKey:@"paoma"];
 
-        CABasicAnimation* caBasePosition2 = [CABasicAnimation animation];
-        caBasePosition2.keyPath = @"transform.translation.x";
-        CGFloat fromValue2 = 0;
-        caBasePosition2.fromValue = [NSNumber numberWithFloat:fromValue2];
-        CGFloat toValue2 = -(self.subTitleLabel.frame.origin.x);
-        caBasePosition2.toValue = [NSNumber numberWithFloat:toValue2];
-        caBasePosition2.repeatCount = CGFLOAT_MAX;
-        caBasePosition2.duration = durantion;
-        [self.titleLable.layer addAnimation:caBasePosition forKey:@"paoma1"];
-        [self.subTitleLabel.layer addAnimation:caBasePosition2 forKey:@"paoma2"];
     }
 }
 
@@ -85,6 +92,7 @@
     if (!_titleLable) {
         _titleLable = [[UILabel alloc] init];
         _titleLable.textColor = [UIColor blackColor];
+
     }
     return _titleLable;
 }
@@ -92,16 +100,37 @@
 - (void)setTitle:(NSString *)title
 {
     self.titleLable.text = title;
+    if (_direction == GCMarqueeDirectionRightToLeft || _direction == GCMarqueeDirectionLeftToRight) {
+        _titleLable.numberOfLines = 1;
+    }else{
+        _titleLable.lineBreakMode = NSLineBreakByWordWrapping;
+        _titleLable.numberOfLines = 0;
+    }
+    self.titleLable.preferredMaxLayoutWidth = self.frame.size.width;
     if(!self.subTitleLabel){
         UILabel *label2 = [[UILabel alloc] init];
         label2.textColor = _titleLable.textColor;
         label2.font = _titleLable.font;
+        label2.numberOfLines = _titleLable.numberOfLines;
+        label2.lineBreakMode = _titleLable.lineBreakMode;
         [self addSubview:label2];
         label2.text = _titleLable.text;
         [label2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.equalTo(self.titleLable);
-            make.top.equalTo(self.titleLable);
-            make.left.equalTo(self.titleLable.mas_right).offset(10);
+            if (_direction == GCMarqueeDirectionRightToLeft) {
+                make.top.equalTo(self.titleLable);
+                make.left.equalTo(self.titleLable.mas_right).offset(self.margin);
+            }else if (_direction == GCMarqueeDirectionLeftToRight){
+                make.top.equalTo(self.titleLable);
+                make.right.equalTo(self.titleLable.mas_left).offset(-self.margin);
+            } else if (_direction == GCMarqueeDirectionBottomToTop){
+                make.top.equalTo(self.titleLable.mas_bottom);
+                make.left.equalTo(self.titleLable);
+            }else if (_direction == GCMarqueeDirectionTopToBottom){
+                make.bottom.equalTo(self.titleLable.mas_top);
+                make.left.equalTo(self.titleLable);
+            }
+
         }];
         self.subTitleLabel = label2;
     }
